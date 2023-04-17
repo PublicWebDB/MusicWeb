@@ -1,0 +1,11 @@
+配器
+1. FM Bass = “各种花式电机装修”，以低音滑音为主  ，Goals,modx +mody（心学名词："一口痰"的艺术）
+SeamlessR大师的办法：滑音（节奏型大法）
+C1-C2段落
+2. 空灵Lead（空灵方波与锯齿波之间偏斜一点）C6段，Harmor：x：全局LFO速度、y：相位器偏移、z：相位器混音量
+3. trance lead（空灵版）（明亮的）
+4. ArpBass(音色：金属弹波感觉），节奏：机关枪
+5. Filthy节奏：机关枪
+6. Carrier音色+Voxdex自动控制，音色感觉：有痰 ，使用人生+Vocodex合成，carrier作为载波器
+配器fst文件
+
