@@ -4,8 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>音樂小站</title>
+    <title>音乐小站</title>
     <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- usercode -->
+    <style>
+        .top-title
+        {
+            width: 800px;
+            height: 400px;
+            background-color:bisque ;
+        }
+        .top-title > .tag
+        {
+            position: relative;
+            top: 0;
+        }
+        .top-title > .title
+        {
+            position: relative;
+            bottom: 0;
+        }
+        .top-title > .writter
+        {
+            position: relative;
+            top: 0;
+        }
+    </style>
 </head>
 <body>
     <!-- 建站大方 -->
@@ -13,8 +41,78 @@
     <!-- 论坛类，参考豆瓣小组 -->
     <!-- 专业类，参考国家政府网站，midifan等专业用户门户网站 -->
     <!-- 专题页面仿，indienova -->
-    <h1 class="main-title">音樂小站</h1>
-    <h2>音乐，为艺术而生</h2>
+    <h1 class="main-title">音乐小站</h1>
+    <nav class="navbar navbar-expand-sm bg-light">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+              <a class="nav-link" href="#">首页</a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">文章</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">教程</a>
+          </div>
+              <!-- s<li class="nav-item">家庭民科实验组</li> -->
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">音色设计</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">热点音色</a>
+                      <a class="dropdown-item" href="#">经典音色</a>
+                  </div>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="资料库/index.html">日志</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="资料库/index.html">小组</a>
+        </li>
+        </ul>
+    </nav>
+    <div class="wrapper">
+        <!-- 根据后台编辑设计，自动切换，样式不变，内容变 -->
+        <div class="top-title">
+            <span class="tag">文章tag</span>
+            <h4 class="title">文章标题</h4>
+            <small class="writer">文章作者</small>
+        </div>
+        <div class="">
+            <a href="">会员制作的音乐</a>
+            <a href="">必听音乐</a>
+        </div>
+        <div class="side-bar">
+            <span>24小时推荐</span>
+            <span>关注的动态</span>
+        </div>
+        <div>
+            <h2>推荐内容</h2>
+        </div>
+        <div>
+            <h2>会员制作音乐</h2>
+            <a href="">更多会员音乐</a>
+        </div>
+        <div>
+            <h2>推广内容</h2>
+        </div>
+        <div>热门音乐</div>
+        <div>
+            <h2>最新音乐文章</h2>
+        </div>
+        <div>
+            <h2>音乐历史回顾</h2>
+        </div>
+
+        <div>
+            <h2>音色素材</h2>
+            <a href="">更多音色素材</a>
+        </div>
+        <div>
+            <h2>最近音色设计文章</h2>
+            
+        </div>
+
+    </div>
+    <!-- <h2>音乐，为艺术而生</h2>
     <ol>
         <li><a href="电音区/index.html">电音区</a></li>
         <li><a href="">古典音乐区</a></li>
@@ -22,14 +120,14 @@
     </ol>
     <h2>音乐风格专题</h2>
     <!-- 层叠目录 -->
-    <ol>
+    <!-- <ol>
         <li>传统</li>
         <li>电子</li>
             <ol>
                 <li>微分音</li>
                 <li>House</li>
             </ol>
-    </ol>
+    </ol> -->
     <!-- rss订阅 -->
 </body>
 </html>

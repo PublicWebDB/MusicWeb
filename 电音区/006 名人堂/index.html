@@ -5,24 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>名人堂</title>
-    
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 </head>
 <body>
     <h1 style="text-align:center">名人堂</h1>
     <!-- 栅栏ui系统 -->
-    <div class="row">
+    <style>
+    .item
+    {
+      display: inline-flex;
+      background-color: black;
+      width: 200px;
+      height: 200px;
+    }</style>
+    <script>
+      $(function()
+      {
+        var c = $("body").clientWidth
+        console.log(c)
+      })
+    </script>
+    <div class="Grid">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+    
+    <!-- <div class="row">
         <div class="col-md-1">.col-md-1</div>
-        <div class="col-md-1">.col-md-1</div>
-        <div class="col-md-1">.col-md-1</div>
-        <div class="col-md-1">.col-md-1</div>
-        <div class="col-md-1">.col-md-1</div>
-        <div class="col-md-1">.col-md-1</div>
-        <div class="col-md-1">.col-md-1</div>
-        <div class="col-md-1">.col-md-1</div>
-        <div class="col-md-1">.col-md-1</div>
-        <div class="col-md-1">.col-md-1</div>
-        <div class="col-md-1">.col-md-1</div>
-        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-2</div>
+        <div class="col-md-1">.col-md-3</div>
+        <div class="col-md-1">.col-md-4</div>
+        <div class="col-md-1">.col-md-5</div>
+        <div class="col-md-1">.col-md-6</div>
+        <div class="col-md-1">.col-md-7</div>
+        <div class="col-md-1">.col-md-8</div>
+        <div class="col-md-1">.col-md-9</div>
+        <div class="col-md-1">.col-md-10</div>
+        <div class="col-md-1">.col-md-11</div>
+        <div class="col-md-1">.col-md-12</div>
       </div>
       <div class="row">
         <div class="col-md-8">.col-md-8</div>
@@ -36,6 +87,6 @@
       <div class="row">
         <div class="col-md-6">.col-md-6</div>
         <div class="col-md-6">.col-md-6</div>
-      </div>
+      </div> -->
 </body>
 </html>
