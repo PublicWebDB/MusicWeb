@@ -1,0 +1,6 @@
+au vsti aax是类似OpenGL的底层规范
+直接用底层sdk开发比较困难
+
+所以使用音频处理框架开发插件
+如：juice框架
+https://juce.com/
