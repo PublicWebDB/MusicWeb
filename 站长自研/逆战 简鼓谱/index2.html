@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>.section_line
+        {
+            background-color: black;
+            width: 20px;
+        }
+        /* 休止符 */
+        .empty
+        {
+            width: 64px;
+            height: 64px;
+        }
+        </style>
+        <script>
+            //4分音符
+            var feng2 = document.getElementsByClassName("feng2")
+            var feng4 = document.getElementsByClassName("feng4")
+            var feng8 = document.getElementsByClassName("feng8")
+            // 处理表格对齐问题
+            for(var i=0;i<feng4.length;i++)
+            {
+                feng4.colspan = 16/4
+            }
+            for(var i=0;i<feng2.length;i++)
+            {
+                feng2.colspan = 16/2
+            }
+            for(var i=0;i<feng8.length;i++)
+            {
+                feng8.colspan = 16/8
+            }
+        </script>
+</head>
+<body>
+    <h2>以最小单位为16分音符对齐，每一个格子表示1个16分音符</h2>
+    鼓手第一小节，从旋律第五小节开始对拍，(等5*4=20个四分音符）
+    <table border="2px">
+        <tr>
+            <tr class="metal_line">
+    
+            </tr>
+            <tr class="drum_line">
+                <td><img src="../图例/snare.png" alt=""></td>
+                <td></td>
+                <td></td>
+                <td><img src="../图例/snare.png" alt=""></td>
+                <td></td>
+                <td></td>
+                <td><img src="../图例/snare.png" alt=""></td>
+            </tr>
+            <tr class="kick_line">
+                <td></td>
+                <td><img src="../图例/kick.png" alt="" srcset=""></td>
+                <td><img src="../图例/kick.png" alt="" srcset=""></td>
+                <td></td>
+                <td><img src="../图例/kick.png" alt="" srcset=""></td>
+                <td><img src="../图例/kick.png" alt="" srcset=""></td>
+                <td></td>
+                
+                
+            </tr>
+            
+            
+        </tr>
+    </table>
+    <table border="2px">
+        <tr class="metal_line">
+            <td><img src="../图例/crash.png" alt=""></td>
+        </tr>
+        <tr class="drum_line">
+
+        </tr>
+        <tr class="kick_line">
+            <td><img src="../图例/kick.png" alt="" srcset=""></td>
+        </tr>
+    </table>
+    
+</body>
+</html>
