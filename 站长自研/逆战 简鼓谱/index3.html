@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16分音符鼓组编辑器</title>
+    <style>
+        .grid >td
+        {
+            width: 64px;
+            height: 64px;
+        }
+        .metal_line >td
+        {
+            width: 64px;
+            height: 64px;
+        }
+        .drum_line > td
+        {
+            width: 64px;
+            height: 64px;
+        }
+        .kick_line >td
+        {
+            width: 64px;
+            height: 64px;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">16分音符 4/4拍鼓组编辑器（三字谱）</h1>
+    <p>导出鼓谱，请直接右键打印为pdf</p>
+    <button onclick="choose_drum('kick')">底鼓</button>
+    <button>军鼓</button>
+    <button>关擦</button>
+    <button>开擦</button>
+
+    <button>高音桶鼓</button>
+    <button>低音桶鼓</button>
+
+    <button>高音地桶鼓</button>
+    <button>低音地桶鼓</button>
+
+    <button>轻吊擦</button>
+    <button>重吊擦</button>
+    <button>叮擦</button>
+
+    <span>小节选择器</span>
+    <select>
+        <option value="1">1</option>
+        <option value="2">2</option>
+    </select>
+    <button>添加一小节</button>
+    <button>删除当前小节</button>
+    <span>当前所在小节</span>
+    <span>1</span>
+    <table border="2px">
+        <tr class="grid">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="metal_line">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="drum_line">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="kick_line">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <script>
+        var Song{}
+        var current_drum = ''
+        //当前所在的小节
+        var current_section = 0
+        function error()
+        {
+            alert("对应的鼓只能放在指定的线上！")
+        }
+        function choose_drum(p_name)
+        {
+            current_drum = p_name
+        }
+        const section1 = document.getElementsByTagName("table").item(0)
+        var metal_line = section1.getElementsByClassName("metal_line")
+        console.log(metal_line)
+        for(var i=0;i<16;i++)
+        {
+            console.log(metal_line.children.item(i))
+        }
+    </script>
+</body>
+</html>
