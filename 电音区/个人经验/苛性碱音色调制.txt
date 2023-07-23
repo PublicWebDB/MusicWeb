@@ -1,2 +1,0 @@
-1. 音高-2400 cents
-2. cutoff 35 ,res最大

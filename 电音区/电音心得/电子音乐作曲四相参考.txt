@@ -1,4 +1,0 @@
-1. vocal
-2. synth
-3. Effect
-4. Drum

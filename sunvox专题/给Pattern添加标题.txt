@@ -1,3 +1,0 @@
-操作步骤
-1. 右键pattern，进入pattern properties
-2. 在Name属性中修改名字
