@@ -1,3 +1,0 @@
-BassoonTracker
-Browser-based old-school Amiga Music Tracker in plain old JavaScript.
-https://github.com/steffest/BassoonTracker
