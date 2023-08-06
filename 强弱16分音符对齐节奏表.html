@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td{
+            width: 18px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        以一小节=16个16分音符为例，只有强弱两种记号，共有多少种排列方法？
+
+可以使用排列组合的思想来解决这个问题。对于每一个位置，我们都有两种选择：放置强记号或放置弱记号。因此，总的排列方法数可以通过计算2的16次方得到。
+
+下面是列表展示了所有的排列方法：
+
+全部为强记号（16个强记号）
+全部为弱记号（16个弱记号）
+第1个为强记号，其余15个为弱记号
+第1个为弱记号，其余15个为强记号
+第2个为强记号，其余14个为弱记号
+第2个为弱记号，其余14个为强记号
+... ... ...
+第16个为弱记号，其余15个为强记号
+总共有65536种排列方法。
+    </p>
+    <h2>目前站长暂时做这么几种排列</h2>
+    <table border="2px">
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+            <th>9</th>
+            <th>10</th>
+            <th>11</th>
+            <th>12</th>
+            <th>13</th>
+            <th>14</th>
+            <th>15</th>
+            <th>16</th>
+        </tr>
+        <tr>
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+
+        </tr>
+        <tr>
+            <td>强</td>
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+            
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+            
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+            
+        </tr>
+        <tr>
+            <td>强</td>
+            <td>强</td>
+            <td>弱</td>
+            <td>弱</td>
+
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+            
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+            
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+        </tr>
+        <tr>
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+            <td>弱</td>
+
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+        </tr>
+        
+        <tr>
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+
+            <td>强</td>
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+        </tr>
+        <tr>
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+
+            <td>强</td>
+            <td>强</td>
+            <td>弱</td>
+            <td>弱</td>
+            
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+        </tr>
+        <tr>
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+            <td>弱</td>
+
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+        </tr>
+        <tr>
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+            
+            <td>强</td>
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+        </tr>
+        <tr>
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+            
+            <td>强</td>
+            <td>强</td>
+            <td>弱</td>
+            <td>弱</td>
+
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+        </tr>
+
+        <tr>
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+            <td>弱</td>
+
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+
+            <td>强</td>
+            <td>弱</td>
+            <td>弱</td>
+            <td>弱</td>
+        </tr>
+        <tr>
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+
+            <td>强</td>
+            <td>强</td>
+            <td>弱</td>
+            <td>弱</td>
+        </tr>
+        <tr>
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+            <td>强</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,7 @@
+FL Studio 的创始人名叫Jean-Marie Cannie，他创立了 Image-Line，公司后来也成为 FL Studio 的开发者和发布者。
+
+Jean-Marie Cannie 在1987年开始制作音乐软件，并在1994年发布了第一个版本的 FruityLoops（后来改名为 FL Studio）。最初，FruityLoops 只是一个简单的鼓机软件，用于创建节奏和循环。随着时间的推移，Cannie 不断改进 FruityLoops 并添加更多功能，使其成为一款全功能的数字音频工作站（DAW）软件。
+
+Image-Line 成立于1994年，旨在开发和发布音频处理软件。初期，Image-Line 主要侧重于 FruityLoops 的开发和销售。然而，随着 FL Studio 的不断发展和用户基础的壮大，Image-Line 逐渐扩展了其产品线，推出了其他音频软件和插件。
+
+通过持续的创新和用户反馈，FL Studio 在音乐制作领域取得了巨大成功，并成为许多音乐制作人和创作者的首选工具之一。Jean-Marie Cannie 和 Image-Line 公司为音乐制作领域做出了重要贡献，并持续致力于提供创新、易用且高品质的音频工具。
