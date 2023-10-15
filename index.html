@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>音乐小站</title>
-    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
     <!-- usercode -->
     <style>
         .top-title
@@ -33,6 +34,25 @@
             position: relative;
             top: 0;
         }
+        #recommand-bar
+        {
+            list-style-type: none;
+            width: 290px;
+            height: 610px;
+        }
+        .custom-hr
+        {
+        color: white;
+        background-color: #67c99c;
+        }
+        .tiezi-list
+          {
+              list-style: none;
+          }
+          .tiezi-list > li:hover
+          {
+              background-color: aqua;
+          }
     </style>
 </head>
 <body>
@@ -69,45 +89,63 @@
         </li>
         </ul>
     </nav>
-    <h2>百科资料库</h2>
-    <a href="百科资料库/index.html">链接</a>
-    <h2>站长自研</h2>
-    <a href="站长自研/三线手脚鼓谱.html">三线简单架子鼓谱</a>
-    <a href="站长自研/弦乐器特殊技法记谱法.html">弦乐器特殊技法记谱法</a>
-    <a href="站长自研/One Day(Funky Mix) Bass弦谱/index.html">OneDay(Funcky Mix)Bass弦谱</a>
-    
-    <h2>专题</h2>
-    <a href="专题/FL Studio专题/index.html">FL Studio专题</a>
-    <a href="专题/70年代电脑专题/list.html">70年代电脑音乐专题</a>
-    <a href="专题/开源专题/index.html">开源专题</a>
-    <a href="专题/数字音频开发技术/index.html">数字音频开发技术</a>
-    <img src="media/synth_icon.png" alt="synth icon" srcset="">
-    <a href="专题/合成器学习/index.html">合成器学习</a>
-    <a href="专题/实用技巧/index.html">实用技巧</a>
-    <a href="专题/软件专题/index.html">软件专题</a>
-    <a href="专题/乐理学习/index.html">乐理学习</a>
-
-    <a href="专题/演奏专题/index.html">演奏专题</a>
-    <h2>站长锐评</h2>
-    <a href="专题/锐评/index.html">锐评</a>
-    <h2>交叉领域</h2>
-    <a href="交叉领域/index.html">学科交叉领域</a>
-
-    <h2>Mod音乐区域</h2>
-    <a href="mod音乐区/index.html">Mod音乐区域</a>
-    <hr/>
-    <a href="电音区/006 名人堂/index.html">电音名人堂</a>
-
-    <h2>电音学习经验</h2>
-    <a href="电音区/个人经验/index.html">站长个人经验</a>
-    <a href="电音区/网友经验/index.html">网友经验</a>
-    <a href="电音区/电音心得/index.html">站长给其他电音创作者者的心得建议</a>
-    <a href="电音区/007 曲风/index.html">站长的配器参考建议</a>
-    <a href="电音区/节奏型参考.html">站长的鼓手节奏型参考建议</a>
-
+      <!-- <h3>最近音乐文章</h3> -->
+      <div class="custom-hr">新闻快讯</div>
+      <a href="https://www.bilibili.com/video/BV1Sh4y187EC/?spm_id_from=333.1007.tianma.1-1-1.click&vd_source=2f740c00cfe14d9860c2829322f9898f">世界第一款桌面机械合成器MOTOR Synth MKII - 功能介绍</a>
+      <div class="custom-hr">百科资料库</div>
+      <a href="百科资料库/index.html">链接</a>
+      <a href="百科资料库/FL studio的历史故事.txt">FL studio的历史故事</a>
+      <div class="custom-hr">站长日志</div>
+  <ol class="tiezi-list">
+      <li><a href="站长自研/三线手脚鼓谱.html">站长自研三线简单架子鼓谱</a></li>
+      <li>    <a href="站长自研/弦乐器特殊技法记谱法.html">弦乐器特殊技法记谱法</a></li>
+      <li>  <a href="站长自研/One Day(Funky Mix) Bass弦谱/index.html">OneDay(Funcky Mix)Bass弦谱</a></li>
+  </ol>
+      <div class="custom-hr">专题</div>
+      <ol class="tiezi-list">
+        <li>  <a href="专题/FL Studio专题/index.html">FL Studio专题</a></li>
+        <li> <a href="专题/70年代电脑专题/list.html">70年代电脑音乐专题</a></li>
+        <li> <a href="专题/开源专题/index.html">开源专题</a></li>
+        <li> <a href="专题/数字音频开发技术/index.html">数字音频开发技术</a></li>
+        <li><a href="专题/合成器学习/index.html">合成器学习</a></li>
+        <li>    <a href="专题/实用技巧/index.html">实用技巧</a></li>
+        <li>    <a href="专题/软件专题/index.html">软件专题</a></li>
+        <li>    <a href="专题/乐理学习/index.html">乐理学习</a></li>
+        <li>    <a href="专题/演奏专题/index.html">演奏专题</a></li>
+        <a href="mod音乐区/index.html">Mod音乐专题</a>
+      </ol>
+      <div class="custom-hr">音乐与评论</div>
+      <a href="专题/锐评/index.html">锐评</a>
+      <div class="custom-hr">交叉领域</div>
+      <ol class="tiezi-list">
+        <li>  <a href="交叉领域/index.html">学科交叉领域</a></li>
+      </ol>
+      <div class="custom-hr">电音学习经验分享</div>
+      <ol class="tiezi-list">
+        <li><a href="电音区/个人经验/index.html">站长个人经验</a></li>
+        <li><a href="电音区/网友经验/index.html">网友经验</a></li>
+        <li>  <a href="电音区/电音心得/index.html">站长给其他电音创作者者的心得建议</a></li>
+        <li>    <a href="电音区/007 曲风/index.html">站长的配器参考建议</a></li>
+        <li>   <a href="电音区/节奏型参考.html">站长的鼓手节奏型参考建议</a></li>
+      </ol>
+      <div class="custom-hr">电音名人堂</div>
+      <a href="电音区/006 名人堂/index.html">电音名人堂</a>
+      <div class="custom-hr">电音与哲学</div>
+      <ol class="tiezi-list">
+        <li><a href="电音区/电音与哲学/关于电子音乐的本质性哲学思考.html">电音的哲学性</a></li>
+        <li><a href="电音区/电音与哲学/器乐与人声乐器以及电子乐器和传统拟音工具的本质与异同.html">关于器乐与人声乐器以及电子乐器和传统拟音工具的本质与异同</a></li>
+      </ol>
+    </body>
+    </html>
+    <!-- <ol id="recommand-bar">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ol> -->
+<!--  
     <h2>电音与哲学</h2>
-    <a href="电音区/电音与哲学/关于电子音乐的本质性哲学思考.html">电音的哲学性</a>
-    <a href="电音区/电音与哲学/器乐与人声乐器以及电子乐器和传统拟音工具的本质与异同.html">关于器乐与人声乐器以及电子乐器和传统拟音工具的本质与异同</a>
+   
     <!-- <h2>音乐，为艺术而生</h2>
     <ol>
         <li><a href="电音区/index.html">电音区</a></li>
@@ -125,8 +163,7 @@
             </ol>
     </ol> -->
     <!-- rss订阅 -->
-</body>
-</html>
+
 <!--
     <div class="wrapper">
        
